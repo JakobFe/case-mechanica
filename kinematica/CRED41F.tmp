@@ -1,0 +1,27 @@
+\section{Kinematica}
+\subsection{Opgave 1}
+Om de ogenblikkelijke totale rotatiesnelheidsvector $\vec{\omega}_{tot}$ te berekenen zetten we eerst alle rotatiesnelheidsvectoren om naar het $x'y'z'$-assenstelsel. $\vec{\omega}_{g}$ en $\vec{\omega}_{i}$ staan hier al in, dus we moeten enkel $\vec{\omega}_{w}$ nog omzetten. Als we deze vectoren optellen krijgen we $\vec{\omega}_{tot}^{'}$ \footnote{Notatie: het aantal accenten als superscript bij vectoren duidt op het assenstelsel waar de vector in is uitgedrukt.}
+\begin{equation}
+\begin{split}
+\vec{\omega}_{w}^{'}&=R^{x'''y'''z''' \rightarrow x'y'z'} \cdot \vec{\omega}_{w}^{'''}\\
+&=\begin{bmatrix}
+\cos(\beta)	&			0			&\sin(\beta)\\
+0						&			1			&			0		 \\
+-\sin(\beta)&			0			&\cos(\beta)\\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+-\omega_{w}	\\
+0						\\
+0						\\
+\end{bmatrix}
+\end{split}
+\label{eq:kin1.1}
+\end{equation}
+\begin{equation}
+\vec{\omega}_{tot}^{'}=\vec{\omega}_{g}^{'} \cdot \vec{\omega}_{i}^{'} \cdot \vec{\omega}_{w}^{'}
+\label{eq:kin1.2}
+\end{equation}
+\subsection{Opgave 2}
+\subsection{Opgave 3}
+\subsection{Opgave 4}

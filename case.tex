@@ -1,0 +1,40 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{pdfpages} 
+\usepackage[dutch]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[official]{eurosym}
+\usepackage{listings}
+\usepackage[titles]{tocloft}
+\usepackage{amssymb,amsmath}
+\usepackage[nottoc, numbib]{tocbibind}
+\usepackage{gensymb}
+\usepackage{placeins}
+\usepackage{float}
+ 
+\title{Quantified Bike}
+\author{Laurent Dossche \and Jakob Festraets \and Peter Lacko}
+\date{27/11/2014}
+
+\pdfinfo{%
+  /Title    (Case Mechanica)
+  /Author   (Laurent Dossche, Jakob Festraets, Peter Lacko)
+  /Creator  ()
+  /Producer ()
+  /Subject  ()
+  /Keywords ()
+}
+\setlength{\footskip}{100pt}
+\begin{document}
+
+\input{title_page/sec.tex}
+
+\newpage
+\tableofcontents
+
+\newpage
+\input{group/sec.tex}
+\input{transformatiematrices/sec.tex}
+\input{kinematica/sec.tex}
+\input{dynamica/sec.tex}
+
+\end{document}

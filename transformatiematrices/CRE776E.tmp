@@ -1,0 +1,45 @@
+\section{Transformatiematrices}
+\begin{itemize}
+\item De matrix in \eqref{eq:tm1} is de transformatiematrix om coördinaten van het bewegend $x'y'z'$-assenstelsel naar het wereldassenstelsel om te zetten. Dit bewegend assenstelsel heeft een draaing met een hoek $\alpha$ rond de x-as.
+\begin{equation}
+R^{x'y'z' \rightarrow xyz}=
+\begin{bmatrix}
+1			&			0			&			0		   \\
+0			&\cos(\alpha)&-\sin(\alpha)\\
+0			&\sin(\alpha)&\cos(\alpha) \\
+\end{bmatrix}
+\label{eq:tm1}
+\end{equation}
+\item Het $x''y''z''$-assenstelsel heeft dezelfde oriëntatie als het $x'y'z'$-assenstelsel. Hier is dus geen transformatiematrix vereist.
+\item De matrix in \eqref{eq:tm2} is de transformatiematrix om coördinaten van het $x'''y'''z'''$-assenstelsel naar het $x''y''z''$-assenstelsel om te zetten. Dit eerste bewegend assenstelsel heeft een draaing met een hoek $\beta$ rond de x-as.
+\begin{equation}
+R^{x'''y'''z''' \rightarrow x''y''z''}=
+\begin{bmatrix}
+\cos(\beta)	&			0			&\sin(\beta)\\
+0						&			1			&			0		 \\
+-\sin(\beta)&			0			&\cos(\beta)\\
+\end{bmatrix}
+\label{eq:tm2}
+\end{equation}
+\item Het $x''''y''''z''''$-assenstelsel heeft dezelfde oriëntatie als het $x'''y'''z'''$-assenstelsel. Hier is dus geen transformatiematrix vereist.
+\item De matrix in \eqref{eq:tm3} is de transformatiematrix om coördinaten van het $x'''y'''z'''$-assenstelsel of van het $x''''y''''z''''$-assenstelsel naar het wereldassenstelsel ($xyz$) om te zetten. Hierbij worden de coördinaten eerst omgezet naar het $x'y'z'$-assenstelsel en pas daarna naar het wereldassenstelsel. Dit kan met volgende matrixvermenigvuldiging.
+\begin{equation}
+R^{x'''y'''z''' \rightarrow xyz}=R^{x'y'z' \rightarrow xyz} \cdot R^{x'''y'''z''' \rightarrow x''y''z''}=
+\begin{bmatrix}
+1			&			0			&			0		   \\
+0			&\cos(\alpha)&-\sin(\alpha)\\
+0			&\sin(\alpha)&\cos(\alpha) \\
+\end{bmatrix}
+\begin{bmatrix}
+\cos(\beta)	&			0			&\sin(\beta)\\
+0						&			1			&			0		 \\
+-\sin(\beta)&			0			&\cos(\beta)\\
+\end{bmatrix}
+=\begin{bmatrix}
+\cos(\beta)							&			0				&\sin(\beta)\\
+\sin(\alpha)\sin(\beta)	&\cos(\alpha)	&-\sin(\alpha)\cos(\beta)\\
+-\sin(\beta)\cos(\alpha)&\sin(\alpha)	&\cos(\alpha)\cos(\beta)\\
+\end{bmatrix}
+\label{eq:tm3}
+\end{equation}
+\end{itemize}
