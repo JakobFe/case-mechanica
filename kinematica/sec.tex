@@ -25,7 +25,7 @@ Om de ogenblikkelijke totale rotatiesnelheidsvector $\vec{\omega}_{tot}$ te bere
 \end{split}
 \label{eq:kin1.1}
 \end{equation}
-Als we al deze vectoren optellen krijgen we $\vec{\omega}_{tot}^{'}$ \footnote{Notatie: het aantal accenten als superscript bij vectoren duidt op het assenstelsel waar de vector in is uitgedrukt.}
+Als we al deze vectoren optellen krijgen we $\vec{\omega}_{tot}^{'}$\footnote{Notatie: het aantal accenten als superscript bij vectoren duidt op het assenstelsel waar de vector in is uitgedrukt.}
 \begin{equation}
 \begin{split}
 \vec{\omega}_{tot}^{'}&=\vec{\omega}_{g}^{'} + \vec{\omega}_{i}^{'} + \vec{\omega}_{w}^{'}\\
@@ -52,7 +52,7 @@ Als we al deze vectoren optellen krijgen we $\vec{\omega}_{tot}^{'}$ \footnote{N
 \end{split}
 \label{eq:kin1.2}
 \end{equation}
-Na omvorming naar het wereldassenstelsel krijgen we de de ogenblikkelijke totale rotatiesnelheidsvector $\vec{\omega}_{tot}$.
+Na omvorming naar het wereldassenstelsel krijgen we de ogenblikkelijke totale rotatiesnelheidsvector $\vec{\omega}_{tot}$.
 \begin{equation}
 \begin{split}
 \vec{\omega}_{tot}&=R^{x'y'z' \rightarrow xyz} \cdot \vec{\omega}_{tot}^{'}\\
@@ -76,7 +76,23 @@ Na omvorming naar het wereldassenstelsel krijgen we de de ogenblikkelijke totale
 \end{split}
 \label{eq:kin1.3}
 \end{equation}
+\newpage
 \subsubsection{Rotatieversnelling}
+Om de ogenblikkelijke totale rotatieversnellingsvector $\vec{\alpha}_{tot}$ te berekenen maken we gebruik van formule \eqref{eq:kin1.4}.
+\begin{equation}
+\vec{\alpha} = \sum_{i=1}^{k}{\frac{\mathrm{d}\omega_{i}}{\mathrm{d}t}\vec{e}_{\omega_{i}}}+\sum_{i=1}^{k}{\vec{\omega}_{i}\frac{\mathrm{d}\vec{e}_{\omega_{i}}}{\mathrm{d}t}}  
+\label{eq:kin1.4}
+\end{equation}
+met:
+\begin{equation}
+\vec{\omega}_{i}\frac{\mathrm{d}\vec{e}_{\omega_{i}}}{\mathrm{d}t}=\sum_{j=1}^{i-1}{\vec{\omega}_{j}\times\vec{\omega}_{i}}  
+\label{eq:kin1.5}
+\end{equation}
+Concreet wordt dit:
+\begin{equation}
+\vec{\alpha} = \vec{\alpha}_{g} + \vec{\alpha}_{i} + \vec{\omega}_{i} \times \vec{\omega}_{g}
+\label{eq:kin1.5}
+\end{equation}
 \subsection{Opgave 2}
 \subsection{Opgave 3}
 \subsection{Opgave 4}
