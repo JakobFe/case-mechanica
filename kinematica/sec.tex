@@ -78,21 +78,110 @@ Na omvorming naar het wereldassenstelsel krijgen we de ogenblikkelijke totale ro
 \end{equation}
 \newpage
 \subsubsection{Rotatieversnelling}
-Om de ogenblikkelijke totale rotatieversnellingsvector $\vec{\alpha}_{tot}$ te berekenen maken we gebruik van formule \eqref{eq:kin1.4}.
+Om de ogenblikkelijke totale rotatieversnellingsvector $\vec{\alpha}_{tot}$ te berekenen maken we gebruik van formule \eqref{eq:kin2.1}.
 \begin{equation}
 \vec{\alpha} = \sum_{i=1}^{k}{\frac{\mathrm{d}\omega_{i}}{\mathrm{d}t}\vec{e}_{\omega_{i}}}+\sum_{i=1}^{k}{\vec{\omega}_{i}\frac{\mathrm{d}\vec{e}_{\omega_{i}}}{\mathrm{d}t}}  
-\label{eq:kin1.4}
+\label{eq:kin2.1}
 \end{equation}
 met:
 \begin{equation}
 \vec{\omega}_{i}\frac{\mathrm{d}\vec{e}_{\omega_{i}}}{\mathrm{d}t}=\sum_{j=1}^{i-1}{\vec{\omega}_{j}\times\vec{\omega}_{i}}  
-\label{eq:kin1.5}
+\label{eq:kin2.2}
 \end{equation}
 Concreet wordt dit:
 \begin{equation}
-\vec{\alpha} = \vec{\alpha}_{g} + \vec{\alpha}_{i} + \vec{\omega}_{i} \times \vec{\omega}_{g}
-\label{eq:kin1.5}
+\vec{\alpha}_{tot} = \vec{\alpha}_{g} + \vec{\alpha}_{i} + \vec{\alpha}_{w} + \vec{\omega}_{g} \times \vec{\omega}_{i} + \vec{\omega}_{g} \times \vec{\omega}_{w} + \vec{\omega}_{i} \times \vec{\omega}_{w}
+\label{eq:kin2.3}
 \end{equation}
+$\vec{\omega}_{g} \times \vec{\omega}_{w}$ en $\vec{\omega}_{i} \times \vec{\omega}_{w}$ zijn termen die duiden op de verandering van oriëntatie van $\vec{\omega}_{w}$. Zijn oriëntatie in namelijk is afhankelijk van $\vec{\omega}_{g}$ en $\vec{\omega}_{i}$. $\vec{\omega}_{g} \times \vec{\omega}_{i}$ is om dezelfde reden toegevoegd.
+
+$\vec{\alpha}_{g}$, $\vec{\alpha}_{i}$, $\vec{\omega}_{g}$ en $\vec{\omega}_{i}$ zijn reeds uitgedrukt in het $x'y'z'$-assenstelsel. $\vec{\omega}_{w}$ werd al in \eqref{eq:kin1.1} naar dit assenstelsel getransformeerd. Hieronder wordt $\vec{\alpha}_{w}$ getransformeerd.
+\begin{equation}
+\begin{split}
+\vec{\alpha}_{w}^{'}&=R^{x'''y'''z''' \rightarrow x'y'z'} \cdot \vec{\alpha}_{w}^{'''}\\
+&=\begin{bmatrix}
+\cos(\beta)	&			0			&\sin(\beta)\\
+0						&			1			&			0		 \\
+-\sin(\beta)&			0			&\cos(\beta)\\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+-\alpha_{w}	\\
+0						\\
+0						\\
+\end{bmatrix}\\
+&=
+\begin{bmatrix}
+-\alpha_{w}\cdot \cos(\beta)	\\
+0						\\
+\alpha_{w}\cdot \sin(\beta)	\\
+\end{bmatrix}
+\end{split}
+\label{eq:kin2.4}
+\end{equation}
+Uitgewerkt wordt $\vec{\alpha}_{tot}$:
+\begin{equation}
+\begin{split}
+\vec{\alpha}_{tot}^{'} &= \vec{\alpha}_{g}^{'} + \vec{\alpha}_{i}^{'} + \vec{\alpha}_{w}^{'} + \vec{\omega}_{g}^{'} \times \vec{\omega}_{i}^{'} + \vec{\omega}_{g}^{'} \times \vec{\omega}_{w}^{'} + \vec{\omega}_{i}^{'} \times \vec{\omega}_{w}^{'}\\
+&=\begin{bmatrix}
+0						\\
+0						\\
+\alpha_{g}	\\
+\end{bmatrix}
++\begin{bmatrix}
+0						\\
+\alpha_{i}	\\
+0						\\
+\end{bmatrix}
++\begin{bmatrix}
+-\alpha_{w}\cdot \cos(\beta)	\\
+0						\\
+\alpha_{w}\cdot \sin(\beta)	\\
+\end{bmatrix}
++\begin{vmatrix}
+e_{x}&e_{y}&e_{z}\\
+0&0&\omega_{g}\\
+0&\omega_{i}&0\\
+\end{vmatrix}\\
+&+\begin{vmatrix}
+e_{x}&e_{y}&e_{z}\\
+0&0&\omega_{g}\\
+-\omega_{w}\cdot \cos(\beta)&0&\omega_{w}\cdot \sin(\beta)\\
+\end{vmatrix}
++\begin{vmatrix}
+e_{x}&e_{y}&e_{z}\\
+0&\omega_{i}&0\\
+-\omega_{w}\cdot \cos(\beta)&0&\omega_{w}\cdot \sin(\beta)\\
+\end{vmatrix}\\
+&=\begin{bmatrix}
+-\alpha_{w}\cos(\beta)-\omega_{i}\omega_{g}+\omega_{i}\omega_{w}\sin{\beta}\\
+\alpha_{i}-\omega_{g}\omega_{w}\cos{\beta}\\
+\alpha_{g}+	\alpha_{w} \sin(\beta)+\omega_{i}\omega_{w}\cos{\beta}\\
+\end{bmatrix}
+\label{eq:kin2.5}
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+\vec{\alpha}_{tot}&=R^{x'y'z' \rightarrow xyz} \cdot \vec{\alpha}_{tot}^{'}\\
+&=\begin{bmatrix}
+1			&			0			&			0		   \\
+0			&\cos(\alpha)&-\sin(\alpha)\\
+0			&\sin(\alpha)&\cos(\alpha) \\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+-\alpha_{w}\cos(\beta)-\omega_{i}\omega_{g}+\omega_{i}\omega_{w}\sin{\beta}\\
+\alpha_{i}-\omega_{g}\omega_{w}\cos{\beta}\\
+\alpha_{g}+	\alpha_{w} \sin(\beta)+\omega_{i}\omega_{w}\cos{\beta}\\
+\end{bmatrix}
+\end{split}
+\label{eq:kin2.6}
+\end{equation}
+De uitwerking wordt hier achterwege gelaten wegens te complex.
+\newpage
 \subsection{Opgave 2}
+\subsubsection{Snelheid}
+\subsubsection{Versnelling}
 \subsection{Opgave 3}
 \subsection{Opgave 4}
