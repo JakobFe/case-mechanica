@@ -1,4 +1,4 @@
-\section{Kinematica}
+e\section{Kinematica}
 \subsection{Opgave 1}
 \subsubsection{Rotatiesnelheid}
 Om de ogenblikkelijke totale rotatiesnelheidsvector $\vec{\omega}_{tot}$ te berekenen zetten we eerst alle rotatiesnelheidsvectoren om naar het $x'y'z'$-assenstelsel. $\vec{\omega}_{g}$ en $\vec{\omega}_{i}$ staan hier al in, dus we moeten enkel $\vec{\omega}_{w}$ nog omzetten. 
@@ -46,8 +46,8 @@ Als we al deze vectoren optellen krijgen we $\vec{\omega}_{tot}^{'}$\footnote{No
 \end{bmatrix}\\
 &=\begin{bmatrix}
 -\omega_{w}\cdot \cos(\beta)	\\
-0						\\
-\omega_{g}+\omega_{i}+\omega_{w}\cdot \sin(\beta)	\\
+\omega_{i}						\\
+\omega_{g}+\omega_{w}\cdot \sin(\beta)	\\
 \end{bmatrix}
 \end{split}
 \label{eq:kin1.2}
@@ -182,10 +182,62 @@ De uitwerking wordt hier achterwege gelaten wegens te complex.
 \newpage
 \subsection{Opgave 2}
 \subsubsection{Snelheid}
-Om de ogenblikkelijke snelheid $\vec{v}_{c}$ van het punt C te berekenen hebben wij voor een combinatie van methodes gekozen. Ten eerste is er een samengestelde beweging met het $x'y'z'$-assenstelsel als bewegend assenstelsel. Hierdoor heeft de sleepsnelheid in \eqref{eq:kin2.1} een component veroorzaakt door de translatie van het vliegtuig met snelheid $\vec{v}_{v}$ en een component veroorzaakt door de rotatie van het vliegtuig met rotatiesnelheid $\vec{\omega}_{g}$.
+Om de ogenblikkelijke snelheid $\vec{v}_{c}$ van het punt C te berekenen hebben wij voor een combinatie van methodes gekozen. Ten eerste is er een samengestelde beweging met het $x'y'z'$-assenstelsel als bewegend assenstelsel. Hierdoor heeft de sleepsnelheid in \eqref{eq:kin2.6} een component veroorzaakt door de translatie van het vliegtuig met snelheid $\vec{v}_{v}$ en een component veroorzaakt door de rotatie van het vliegtuig met rotatiesnelheid $\vec{\omega}_{g}$. Ten tweede maken we gebruik van de methode van som van rotaties om de relatieve snelheid in \eqref{eq:kin2.7} van de eerder vermelde samengestelde beweging te berekenen. We moeten eerst echter de afstandsvectoren berekenen.
 \begin{equation}
-\vec{r}_{A}=
-\label{eq:kin2.1}
+\vec{r}_{AB}^{'}=
+\begin{bmatrix}
+l_{1}\\
+0\\
+l_{2}\\
+\end{bmatrix}
+\label{eq:kin2.3}
+\end{equation}
+\begin{equation}
+\vec{r}_{BC}^{'}=
+\begin{bmatrix}
+-(l_{3}\sin{\beta}+l_{4}\cos{\beta})\\
+0\\
+-l_{3}\cos{\beta}+l_{4}\sin{\beta}\\
+\end{bmatrix}
+\label{eq:kin2.4}
+\end{equation}
+\begin{equation}
+\vec{r}_{AC}^{'}=
+\begin{bmatrix}
+l_{1}-(l_{3}\sin{\beta}+l_{4}\cos{\beta})\\
+0\\
+l_{2}-l_{3}\cos{\beta}+l_{4}\sin{\beta}\\
+\end{bmatrix}
+\label{eq:kin2.5}
+\end{equation}
+De sleepsnelheid uitgedrukt in het $x'y'z'$-assenstelsel.
+\begin{equation}
+\begin{split}
+\vec{v}_{sleep}^{'}&=\vec{v}_{v}^{'}+\vec{\omega}_{g}^{'}\times\vec{r}_{AC}^{'}\\
+&=\begin{bmatrix}
+0						\\
+\vec{v}_{v}	\\
+0						\\
+\end{bmatrix}
++\begin{vmatrix}
+e_{x}&e_{y}&e_{z}\\
+0&0&\omega_{g}\\
+l_{1}-(l_{3}\sin{\beta}+l_{4}\cos{\beta})&0&l_{2}-l_{3}\cos{\beta}+l_{4}\sin{\beta}\\
+\end{vmatrix}\\
+\end{split}
+\label{eq:kin2.6}
+\end{equation}
+Ook de relatieve snelheid wordt in het $x'y'z'$-assenstelsel uitgedrukt. $\vec{\omega}_{w}$ is niet opgenomen in de formule omdat deze geen bijdrage bij de snelheid van C levert.
+\begin{equation}
+\begin{split}
+\vec{v}_{rel}^{'}&=\vec{\omega}_{i}^{'}\times\vec{r}_{BC}^{'}\\
+&=\begin{vmatrix}
+e_{x}&e_{y}&e_{z}\\
+0&\omega_{i}&0\\
+-(l_{3}\sin{\beta}+l_{4}\cos{\beta})&0&-l_{3}\cos{\beta}+l_{4}\sin{\beta}\\
+\end{vmatrix}\\
+\end{split}
+\label{eq:kin2.7}
 \end{equation}
 \subsubsection{Versnelling}
 \subsection{Opgave 3}
