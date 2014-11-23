@@ -3,13 +3,13 @@
 \subsubsection{Impuls}
 De snelheid van het punt D en van het punt C die nodig is om de ogenblikkelijke impulsvector van het landingsgestel en het wiel te berekenen, werd al berekend in respectievelijk \eqref{eq:kin4.6} en \eqref{eq:kin2.8}.
 \begin{itemize}
-\item \textbf{Landingsgestel} 
+\item Landingsgestel
 \begin{equation}
 \vec{p}_{l}^{'}=m_{l}\vec{v}_{d}^{'}=
 \left[ \begin {array}{c} m_{l}\frac{1}{4}\,\omega_{i}\,l_{3}\\ \noalign{\medskip}m_{l}(v_{v}+\omega_{g}\, \left( l_{1}+\frac{3}{4}\,l_{4}) \right) \\ \noalign{\medskip}-m_{l}\frac{3}{4}\,\omega_{i}\,l_{4}\end {array} \right]
 \label{eq:dyn1.1}
 \end{equation}
-\item \textbf{Wiel}
+\item Wiel
 \begin{equation}
 \vec{p}_{w}^{'}=m_{w}\vec{v}_{c}^{'}=
 \left[ \begin {array}{c} m_{w}\omega_{i}\, \left( \sin \left( \beta
@@ -20,13 +20,13 @@ De snelheid van het punt D en van het punt C die nodig is om de ogenblikkelijke 
 \subsubsection{Verandering van impuls}
 Ook de versnelling van de punten D en C zijn hier nodig en werden eerder al berekend in \eqref{eq:kin4.12} en \eqref{eq:kin2.15}.
 \begin{itemize}
-\item \textbf{Landingsgestel}
+\item Landingsgestel
 \begin{equation}
 \frac{\mathrm{d}\vec{p}_{l}^{'}}{\mathrm{d}t}=m_{l}\vec{a}_{d}^{'}
 =\left[ \begin {array}{c} m_{l}(-{\omega_{g}}^{2} \left( l_{1}+\frac{3}{4}\,l_{4} \right) +\frac{1}{4} \,\alpha_{i}\,l_{3}-\frac{3}{4}\,{\omega_{i}}^{2}l_{4})\\ \noalign{\medskip}m_{l}(a_{v}+\alpha_{g}\, \left( l_{1}+\frac{3}{4}\,l_{4} \right) +\frac{3}{4}\,\omega_{g}\,\omega_{i}\,l_{3})\\ \noalign{\medskip}m_{l}(-\frac{3}{4}\,\alpha_{i}\,l_{4}-\frac{1}{4}\,{\omega_{i}}^{2}l_{3})\end {array} \right]
 \label{eq:dyn1.3}
 \end{equation}
-\item \textbf{Wiel}
+\item Wiel
 \def\arraystretch{0.5}
 \begin{equation}
 \frac{\mathrm{d}\vec{p}_{w}^{'}}{\mathrm{d}t}=m_{w}\vec{a}_{c}^{'}
@@ -34,14 +34,11 @@ Ook de versnelling van de punten D en C zijn hier nodig en werden eerder al bere
 \label{eq:dyn1.4}
 \end{equation}
 \end{itemize}
-\newpage
 \subsection{Opgave 2}
 \subsubsection{Impulsmoment}
 \begin{itemize}
-\item \textbf{Landingsgestel}
-
+\item Landingsgestel
 Zowel punt C als punt D zitten vast aan het landingsgestel en hebben dus bijgevolg dezelfde hoeksnelheid. Voor $\vec{\omega}_{c}$ zie \eqref{eq:kin1.2}.
-
 Om de inertiematrix van het landingsgestel te kunnen gebruiken in onze formule dienen we ze eerst om te zetten naar het $x'y'z'$-assenstelsel.
 \begin{equation}
 \begin{split}
@@ -65,73 +62,12 @@ I_{l,x'''x'''}&0&0\\
 \label{eq:dyn2.1}
 \end{equation}
 \begin{equation}
-\begin{split}
-\vec{L}_{l}^{'}&=I_{l}^{'}\vec{\omega}_{d}^{'}=I_{l}^{'}\vec{\omega}_{c}^{'}\\
-&=\begin{bmatrix}
-\cos(\beta)I_{l,x'''x'''}	&			0			&\sin(\beta)I_{l,z'''z'''}\\
-0						&			I_{l,y'''y'''}			&			0		 \\
--\sin(\beta)I_{l,x'''x'''}&			0			&\cos(\beta)I_{l,z'''z'''}\\
-\end{bmatrix}
-\begin{bmatrix}
--\omega_{w}\cos(\beta)	\\
-\omega_{i}						\\
-\omega_{g}+\omega_{w}\sin(\beta)	\\
-\end{bmatrix}\\
-&=\begin{bmatrix}
--\cos^{2}(\beta)I_{l,x'''x'''}\omega_{w}+\sin(\beta)I_{l,z'''z'''}(\omega_{g}+\omega_{w} \sin(\beta))	\\
-I_{l,y'''y'''}\omega_{i}						\\
-\sin(\beta)\cos(\beta)I_{l,x'''x'''}\omega_{w}+\cos(\beta)I_{l,z'''z'''}(\omega_{g}+\omega_{w} \sin(\beta))	\\
-\end{bmatrix}
-\end{split}
+\vec{L}_{l}^{'}=I_{l}^{'}\vec{\omega}_{d}=
+\begin{matrix}
+I_{l,x'''x'''}
 \label{eq:dyn2.2}
 \end{equation}
-\item \textbf{Wiel}
-
-Het impulsmoment van het wiel wordt bijna op exact dezelfde wijze berekend.
-\begin{equation}
-\begin{split}
-I_{w}^{'}&=R^{x''''y''''z'''' \rightarrow x'y'z'}I_{w}^{''''}\\
-&=\begin{bmatrix}
-\cos(\beta)	&			0			&\sin(\beta)\\
-0						&			1			&			0		 \\
--\sin(\beta)&			0			&\cos(\beta)\\
-\end{bmatrix}
-\begin{bmatrix}
-I_{w,x''''x''''}&0&0\\
-0&I_{w,y''''y''''}&0\\
-0&0&I_{w,z''''z''''}\\
-\end{bmatrix}\\
-&=\begin{bmatrix}
-\cos(\beta)I_{w,x''''x''''}	&		0		&\sin(\beta)I_{w,z''''z''''}\\
-0			&			I_{w,y''''y''''}			&		0		 \\
--\sin(\beta)I_{w,x''''x''''}&		0		&\cos(\beta)I_{w,z''''z''''}\\
-\end{bmatrix}
-\end{split}
-\label{eq:dyn2.3}
-\end{equation}
-\begin{equation}
-\begin{split}
-\vec{L}_{w}^{'}&=I_{w}^{'}\vec{\omega}_{c}^{'}\\
-&=\begin{bmatrix}
-\cos(\beta)I_{w,x''''x''''}	&		0		&\sin(\beta)I_{w,z''''z''''}\\
-0			&			I_{w,y''''y''''}			&		0		 \\
--\sin(\beta)I_{w,x''''x''''}&		0		&\cos(\beta)I_{w,z''''z''''}\\
-\end{bmatrix}
-\begin{bmatrix}
--\omega_{w}\cos(\beta)	\\
-\omega_{i}						\\
-\omega_{g}+\omega_{w}\sin(\beta)	\\
-\end{bmatrix}\\
-&=\begin{bmatrix}
--\cos^{2}(\beta)I_{w,x''''x''''}\omega_{w}+\sin(\beta)I_{w,z''''z''''}(\omega_{g}+\omega_{w} \sin(\beta))	\\
-I_{w,y''''y''''}\omega_{i}						\\
-\sin(\beta)\cos(\beta)I_{w,x''''x''''}\omega_{w}+\cos(\beta)I_{w,z''''z''''}(\omega_{g}+\omega_{w} \sin(\beta))	\\
-\end{bmatrix}
-\end{split}
-\label{eq:dyn2.4}
-\end{equation}
 \end{itemize}
-\newpage
 \subsubsection{Verandering van impulsmoment}
 \subsection{Opgave 3}
 \subsection{Opgave 4}
