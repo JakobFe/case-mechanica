@@ -392,7 +392,7 @@ e_{x}&e_{y}&e_{z}\\
 {i}\, \left( \sin \left( \beta \right) l_{4}-\cos \left( \beta
  \right) l_{3} \right) \\ 0\end {array} \right]
 \end{split}
-\label{eq:kin3.1}
+\label{eq:kin2.15}
 \end{equation}
 \subsection{Opgave 4}
 \subsubsection{Snelheid}
@@ -404,7 +404,7 @@ l_{1}\\
 0\\
 l_{2}\\
 \end{bmatrix}
-\label{eq:kin4.1}
+\label{eq:kin2.16}
 \end{equation}
 \begin{equation}
 \vec{r}_{BD}^{'}=
@@ -413,7 +413,7 @@ l_{2}\\
 0\\
 \frac{1}{4}l_{3}\\
 \end{bmatrix}
-\label{eq:kin4.2}
+\label{eq:kin2.17}
 \end{equation}
 \begin{equation}
 \vec{r}_{AD}^{'}=
@@ -422,7 +422,7 @@ l_{1}+\frac{3}{4}l_{4}\\
 0\\
 l_{2}+\frac{1}{4}l_{3}\\
 \end{bmatrix}
-\label{eq:kin4.3}
+\label{eq:kin2.18}
 \end{equation}
 De sleepsnelheid uitgedrukt in het $x'y'z'$-assenstelsel.
 \begin{equation}
@@ -440,11 +440,11 @@ l_{1}+\frac{3}{4}l_{4}&0&l_{2}+\frac{1}{4}l_{3}\\
 \end{vmatrix}\\
 &=\begin{bmatrix}
 0						\\
-v_{v}+\omega_{g}\,\left( l_{1}+\frac{3}{4} l_{4}\right)\\
+v_{v}+\omega_{g}\,\left( l_{1}+\frac{3}{4} l_{4})\\
 0						\\
 \end{bmatrix}
 \end{split}
-\label{eq:kin4.4}
+\label{eq:kin2.19}
 \end{equation}
 Ook de relatieve snelheid wordt in het $x'y'z'$-assenstelsel uitgedrukt.
 \begin{equation}
@@ -457,12 +457,12 @@ e_{x}&e_{y}&e_{z}\\
 \end{vmatrix}\\
 &=\left[\begin{array}{c}\frac{1}{4}\,\omega_{i}\,l_{3}\\0\\-\frac{3}{4}\,\omega_{i}\,l_{4}\end{array}\right]
 \end{split}
-\label{eq:kin4.5}
+\label{eq:kin2.20}
 \end{equation}
-Na optelling van de sleepsnelheid en relatieve snelheid bekomen we \eqref{eq:kin4.6}.
+Na optelling van de sleepsnelheid en relatieve snelheid bekomen we \eqref{eq:kin2.21}.
 \begin{equation}
 \vec{v}_{d}^{'}=\left[ \begin {array}{c} 1/4\,\omega_{i}\,l_{3}\\ \noalign{\medskip}v_{v}+\omega_{g}\, \left( l_{1}+3/4\,l_{4} \right) \\ \noalign{\medskip}-3/4\,\omega_{i}\,l_{4}\end {array} \right]
-\label{eq:kin4.6}
+\label{eq:kin2.21}
 \end{equation}
 \subsubsection{Versnelling}
 De versnelling van het punt D wordt op volledig dezelfde manier bepaald als de versnelling van het punt C als in \ref{sec:versnelling}. Hieronder worden enkel de formules met hun uitwerking neergeschreven vermits de werkwijze eerder al werd verduidelijkt.
@@ -485,7 +485,7 @@ e_{x}&e_{y}&e_{z}\\
 \frac{1}{4}\,\omega_{i}\,l_{3}&\omega_{g}\, \left( l_{1}+\frac{3}{4}\,l_{4} \right)&-\frac{3}{4}\,\omega_{i}\,l_{4}\\
 \end{vmatrix}\\
 &=\left[ \begin {array}{c} -{\omega_{g}}^{2} \left( l_{1}+\frac{3}{4}\,l_{4} \right) \\a_{v}+\alpha_{g}\, \left( l_{1}+\frac{3}{4}\,l_{4} \right) +\frac{1}{4}\,\omega_{g}\,\omega_{i}\,l_{3}\\0\end {array} \right]
-\label{eq:kin4.7}
+\label{eq:kin2.10}
 \end{split}
 \end{equation}
 \begin{equation}
@@ -494,7 +494,7 @@ e_{x}&e_{y}&e_{z}\\
 &=\begin{vmatrix}
 e_{x}&e_{y}&e_{z}\\
 0&\alpha_{i}&0\\
-\frac{3}{4}l_{4}&0&\frac{1}{4}l_{3}\\
+\frac{3}{4}l__{4}&0&\frac{1}{4}l__{3}\\
 \end{vmatrix}\\
 &+\begin{vmatrix}
 e_{x}&e_{y}&e_{z}\\
@@ -503,7 +503,7 @@ e_{x}&e_{y}&e_{z}\\
 \end{vmatrix}\\
 &=\left[ \begin {array}{c} 1/4\,\alpha_{i}\,l_{3}-3/4\,{\omega_{i}}^{2}l_{4}\\0\\-3/4\,\alpha_{i}\,l_{4}-1/4\,{\omega_{i}}^{2}l_{3}\end {array} \right]
 \end{split}
-\label{eq:kin4.8}
+\label{eq:kin2.11}
 \end{equation}
 \begin{equation}
 \begin{split}
@@ -517,12 +517,12 @@ e_{x}&e_{y}&e_{z}\\
 &=\left[ \begin {array}{c} 0\\ \frac{1}{2}\,\omega_{g}\,
 \omega_{i}\,l_{3}\\ 0\end {array} \right]
 \end{split}
-\label{eq:kin4.9}
+\label{eq:kin2.12}
 \end{equation}
 \begin{equation}
 \vec{v}_{d}^{'}-\vec{v}_{a}^{'}=\vec{v}_{d}^{'}-\vec{v}_{v}^{'}=
 \left[ \begin {array}{c} \frac{1}{4}\,\omega_{i}\,l_{3}\\ \noalign{\medskip}\omega_{g}\, \left( l_{1}+\frac{3}{4}\,l_{4} \right) \\ \noalign{\medskip}-\frac{3}{4}\,\omega_{i}\,l_{4}\end {array} \right]
-\label{eq:kin4.10}
+\label{eq:kin2.13}
 \end{equation}
 \begin{equation}
 \begin{split}
@@ -542,13 +542,11 @@ l_{1}&0&l_{2}\\
 v_{v}+l_{1}\omega_{g}\\
 0\\
 \end{bmatrix}
-\label{eq:kin4.11}
+\label{eq:kin2.14}
 \end{split}
 \end{equation}
-De uiteindelijke oplossing:
 \begin{equation}
 \vec{a}_{tot}^{'}=\left[ \begin {array}{c} -{\omega_{g}}^{2} \left( l_{1}+\frac{3}{4}\,l_{4} \right) +\frac{1}{4} \,\alpha_{i}\,l_{3}-\frac{3}{4}\,{\omega_{i}}^{2}l_{4}\\ \noalign{\medskip}a_{v}+\alpha_{g}\, \left( l_{1}+\frac{3}{4}\,l_{4} \right) +\frac{3}{4}\,\omega_{g}\,\omega_{i}\,l_{3}\\ \noalign{\medskip}-\frac{3}{4}\,\alpha_{i}\,l_{4}-\frac{1}{4}\,{\omega_{i}}^{2}l_{3}\end {array} \right]
-\label{eq:kin4.12}
 \end{equation}
 \begin{equation}
 \vec{\alpha}_{tot}=R^{x'y'z' \rightarrow xyz}\cdot\vec{\alpha}_{tot}^{'}
