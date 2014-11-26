@@ -399,6 +399,7 @@ e_{x}&e_{y}&e_{z}\\
 \newpage
 \subsection{Opgave 4}
 \subsubsection{Snelheid}
+\label{sec:3.4.1}
 Om de snelheid van het punt D te bepalen zullen we dezelfde werkwijze als bij opgave 2 hanteren (een combinatie van samengestelde beweging en som van rotaties). We beginnen echter met de afstandsvectoren.
 \begin{equation}
 \vec{r}_{AB}^{'}=
@@ -523,11 +524,12 @@ Na optelling van de sleepsnelheid en relatieve snelheid bekomen we \eqref{eq:kin
 \label{eq:kin4.9}
 \end{equation}
 \subsubsection{Versnelling}
+\label{sec:3.4.2}
 De versnelling van het punt D wordt op volledig dezelfde manier bepaald als de versnelling van het punt C als in \ref{sec:versnelling}. Op de volgende pagina worden enkel de formules met hun uitwerking neergeschreven vermits de werkwijze eerder al werd verduidelijkt.
 
 De uiteindelijke oplossing is:
 \begin{equation}
-\vec{a}_{tot}^{'}=\left[ \begin {array}{c} -{\omega_{g}}^{2} \left( l_{1}+\frac{3}{4}\,l_{4} \right) +\frac{1}{4} \,\alpha_{i}\,l_{3}-\frac{3}{4}\,{\omega_{i}}^{2}l_{4}\\ \noalign{\medskip}a_{v}+\alpha_{g}\, \left( l_{1}+\frac{3}{4}\,l_{4} \right) +\frac{3}{4}\,\omega_{g}\,\omega_{i}\,l_{3}\\ \noalign{\medskip}-\frac{3}{4}\,\alpha_{i}\,l_{4}-\frac{1}{4}\,{\omega_{i}}^{2}l_{3}\end {array} \right]
+\vec{a}_{tot}^{'}=\left[ \begin {smallmatrix} -{\omega_{g}}^{2} \left( l_{1}-\frac{1}{4}\,\cos \left( \beta \right) l_{4}-\frac{3}{4}\,\sin \left( \beta \right) l_{3} \right) +\alpha_{i}\, \left( \frac{1}{4}\,\sin \left( \beta \right) l_{4}-\frac{3}{4}\,\cos \left( \beta \right) l_{3} \right) -{\omega_{i}}^{2} \left( -\frac{1}{4}\,\cos \left( \beta \right) l_{4}-\frac{3}{4}\,\sin \left( \beta \right) l_{3} \right) \\ \noalign{\medskip}a_{v}+\alpha_{g}\, \left( l_{1}-\frac{1}{4}\,\cos \left( \beta \right) l_{4}-\frac{3}{4}\,\sin \left( \beta \right) l_{3} \right) +3\,\omega_{g}\,\omega_{i}\, \left( \frac{1}{4}\,\sin \left( \beta \right) l_{4}-\frac{3}{4}\,\cos \left( \beta \right) l_{3} \right) \\ \noalign{\medskip}-\alpha_{i}\, \left( -\frac{1}{4}\,\cos \left( \beta \right) l_{4}-\frac{3}{4}\,\sin \left( \beta \right) l_{3} \right) -{\omega_{i}}^{2} \left( \frac{1}{4}\,\sin \left( \beta \right) l_{4}-\frac{3}{4}\,\cos \left(\beta \right) l_{3} \right) \end {smallmatrix} \right]
 \label{eq:kin4.12}
 \end{equation}
 \begin{equation}

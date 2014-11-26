@@ -159,7 +159,7 @@ I_{l,y'''y'''}(\alpha_{i}-\omega_{g}\omega_{w}\cos{\beta})\\
 \end{split}
 \label{eq:dyn2.5}
 \end{equation}
-De volledige vergelijking\footnote{Hier worden $I_{l,x'''x'''}$, $I_{l,y'''y'''}$ en $I_{l,z'''z'''}$ afgekort als respectievelijk $I_{l,x'''}$, $I_{l,y'''}$ en $I_{l,z'''}$ om de omvang van de matrix te beperken.} voor de verandering van het impulsmoment gaat als volgt (met $\vec{\Omega}_{c}$ gelijk aan $\vec{\omega}_{c}$).
+De volledige vergelijking \footnote{Hier worden $I_{l,x'''x'''}$, $I_{l,y'''y'''}$ en $I_{l,z'''z'''}$ afgekort als respectievelijk $I_{l,x'''}$, $I_{l,y'''}$ en $I_{l,z'''}$ om de omvang van de matrix te beperken.} voor de verandering van het impulsmoment gaat als volgt (met $\vec{\Omega}_{c}$ gelijk aan $\vec{\omega}_{c}$).
 \begin{equation*}
 \begin{split}
 \frac{\mathrm{d}\vec{L}_{l}^{'}}{\mathrm{d}t}&=\left(\frac{\mathrm{d}\vec{L}_{l}^{'}}{\mathrm{d}t}\right)_{rel} + \vec{\Omega}_{c}^{'} \times \vec{L}_{l}^{'}\\
@@ -326,34 +326,30 @@ met
 A&=\left( \cos \left( \beta \right) l_{4}\left(m_{l}+4m_{w}\right)+\sin \left( \beta \right) l_{3}\left(3m_{l}+4m_{w}\right) \right)\\
 B&=\left( \cos \left( \beta \right) l_{3}\left(3\,m_{l}\,+4\,m_{w}\right)-\sin \left( \beta \right) l_{4}\left(m_{l}\,-4\,m_{w}\right) \right)\\
 \end{align*}
-\newpage
 \subsection{Opgave 4}
 De momentenvergelijking rond het zwaartepunt van het wiel ziet er als volgt uit.
 \begin{equation*}
 \frac{\mathrm{d}\vec{L}_{c}^{'}}{\mathrm{d}t}=\vec{G}_{c}^{'}\times\vec{0}+\vec{R}_{c}^{'}\times\vec{0}+\vec{M}_{c}^{'}=\vec{M}_{c}^{'}
 \end{equation*}
-Opmerkelijk is hierbij dat alle krachten in het zwaartepunt aangrijpen en dus geen bijdrage hebben tot het totale moment. De verandering van impulsmoment in C werd reeds in \eqref{eq:dyn2.9} berekend.
+Opmerkelijk is hierbij dat alle krachten in het zwaartepunt aangrijpen en dus geen bijdrage hebben tot het totale moment. De verandering van impulsmoment werd reeds in \eqref{eq:dyn2.9} berekend.
 
 In een tweede geval stellen we de momentenvergelijking van het landingsgestel rond zijn zwaartepunt D op, waarbij:
 \begin{itemize}
 \item $\frac{\mathrm{d}\vec{L}_{d}^{'}}{\mathrm{d}t}$ gelijk is aan $\frac{\mathrm{d}\vec{L}_{l}^{'}}{\mathrm{d}t}$ die we al in sectie \ref{sec:4.2.2} uitgewerkt hebben. 
-\item $\vec{M}_{c}^{'}$ gelijk is aan $\frac{\mathrm{d}\vec{L}_{c}^{'}}{\mathrm{d}t}$ en aan $\frac{\mathrm{d}\vec{L}_{w}^{'}}{\mathrm{d}t}$ die ook in sectie \ref{sec:4.2.2} te vinden is.
+\item $\vec{M}_{c}^{'}$ gelijk is aan $\frac{\mathrm{d}\vec{L}_{c}^{'}}{\mathrm{d}t}$ en aan $\frac{\mathrm{d}\vec{L}_{w}^{'}}{\mathrm{d}t}$ die ook in sectie \label{sec:4.2.2} te vinden is.
 \end{itemize}
-\begin{equation*}
-\frac{\mathrm{d}\vec{L}_{d}^{'}}{\mathrm{d}t}=\vec{G}_{c}^{'}\times\vec{0}+\vec{R}_{b}^{'}\times\vec{r}_{BD}^{'}+\left(-\vec{R}_{c}^{'}\right) \times \vec{r}_{CD}^{'} - \vec{M}_{c}^{'} + \vec{M}_{b}^{'}
-\end{equation*}
 Voor we deze vergelijking gaan uitwerken definiëren we eerst de afstandsvectoren die we nodig hebben in deze vergelijking (voor $\vec{r}_{BD}^{'}$ zie sectie \ref{sec:3.4.1}).
 \begin{align*}
 \vec{r}_{BD}^{'}&=\begin{bmatrix}
 -\frac{1}{4}\cos(\beta)l_{4}-\frac{3}{4}\sin(\beta)l_{3}\\
 0\\
 \frac{1}{4}\sin(\beta)l_{4}-\frac{3}{4}\cos(\beta)l_{3}\\
-\end{bmatrix}\\
+\end{bmatrix}
 \vec{r}_{CD}^{'''}&=\begin{bmatrix}
 \frac{3}{4}l_{4}\\
 0\\
 \frac{1}{4}l_{3}\\
-\end{bmatrix}\\
+\end{bmatrix}
 \vec{r}_{CD}^{'}&=R^{x'''y'''z''' \rightarrow x'y'z'}\vec{r}_{CD}^{'''}\\
 &=\begin{bmatrix}
 \cos(\beta)	&			0			&\sin(\beta)\\
@@ -366,55 +362,17 @@ Voor we deze vergelijking gaan uitwerken definiëren we eerst de afstandsvectore
 \frac{1}{4}l_{3}\\
 \end{bmatrix}\\
 &=\begin{bmatrix}
-\frac{3}{4}\cos(\beta)l_{4}+\frac{1}{4}\sin(\beta)l_{3}\\
++\frac{3}{4}\cos(\beta)l_{4}+\frac{1}{4}\sin(\beta)l_{3}\\
 0\\
 -\frac{3}{4}\sin(\beta)l_{4}+\frac{1}{4}\cos(\beta)l_{3}\\
 \end{bmatrix}
 \end{align*}
-Vervolgens werken we de momentenvergelijking\footnote{Hier worden $I_{l,x'''x'''}$, $I_{l,y'''y'''}$ en $I_{l,z'''z'''}$ afgekort als respectievelijk $I_{l,x'''}$, $I_{l,y'''}$ en $I_{l,z'''}$ om de omvang van de matrix te beperken.}
- uit naar de enige onbekende.
+\begin{equation*}
+\frac{\mathrm{d}\vec{L}_{d}^{'}}{\mathrm{d}t}=\vec{G}_{c}^{'}\times\vec{0}+\vec{R}_{b}^{'}\times\vec{r}_{BD}^{'}+\left(-\vec{R}_{c}^{'}\right) \times \vec{r}_{CD}^{'} - \vec{M}_{c}^{'} + \vec{M}_{b}^{'}
+\end{equation*}
+Vervolgens werken we dit uit naar de enige onbekende.
 \begin{align*}
 \vec{M}_{b}^{'}&=\frac{\mathrm{d}\vec{L}_{d}^{'}}{\mathrm{d}t}+\vec{M}_{c}^{'}+\vec{R}_{c}^{'} \times \vec{r}_{CD}^{'}-\vec{R}_{b}^{'}\times\vec{r}_{BD}^{'}\\
-&=\left[\begin{smallmatrix}
-\cos(\beta)I_{l,x'''x'''}(\alpha_{w}\cos(\beta)-\omega_{i}\omega_{g}+\omega_{i}\omega_{w}\sin{\beta})+\sin(\beta)I_{l,z'''z'''}(\alpha_{g}-	\alpha_{w} \sin(\beta)+\omega_{i}\omega_{w}\cos{\beta})\\
-I_{l,y'''}(\alpha_{i}-\omega_{g}\omega_{w}\cos{\beta})\\
--\sin(\beta)I_{l,x'''}(\alpha_{w}\cos(\beta)-\omega_{i}\omega_{g}+\omega_{i}\omega_{w}\sin{\beta})+\cos(\beta)I_{l,z'''}(\alpha_{g}-	\alpha_{w} \sin(\beta)+\omega_{i}\omega_{w}\cos{\beta})\\
-\end{smallmatrix}\right]\\
-&+\left|\begin{smallmatrix}
-e_{x}&e_{y}&e_{z}\\
--\omega_{w}\cos(\beta)&\omega_{i}&\omega_{g}+\omega_{w}\sin(\beta)\\-\cos^{2}(\beta)I_{l,x'''}\omega_{w}+\sin(\beta)I_{l,z'''}(\omega_{g}+\omega_{w} \sin(\beta))&I_{l,y'''}\omega_{i}&\sin(\beta)\cos(\beta)I_{l,x'''}\omega_{w}+\cos(\beta)I_{l,z'''}(\omega_{g}+\omega_{w} \sin(\beta))\\
-\end{smallmatrix}\right|\\
-&+\left[\begin{smallmatrix}
-\cos(\beta)I_{w,x'''x'''}(\alpha_{w}\cos(\beta)-\omega_{i}\omega_{g}+\omega_{i}\omega_{w}\sin{\beta})+\sin(\beta)I_{w,z'''z'''}(\alpha_{g}-	\alpha_{w} \sin(\beta)+\omega_{i}\omega_{w}\cos{\beta})\\
-I_{w,y'''}(\alpha_{i}-\omega_{g}\omega_{w}\cos{\beta})\\
--\sin(\beta)I_{w,x'''}(\alpha_{w}\cos(\beta)-\omega_{i}\omega_{g}+\omega_{i}\omega_{w}\sin{\beta})+\cos(\beta)I_{w,z'''}(\alpha_{g}-	\alpha_{w} \sin(\beta)+\omega_{i}\omega_{w}\cos{\beta})\\
-\end{smallmatrix}\right]\\
-&+\left|\begin{smallmatrix}
-e_{x}&e_{y}&e_{z}\\
--\omega_{w}\cos(\beta)&\omega_{i}&\omega_{g}+\omega_{w}\sin(\beta)\\-\cos^{2}(\beta)I_{w,x'''}\omega_{w}+\sin(\beta)I_{w,z'''}(\omega_{g}+\omega_{w} \sin(\beta))&I_{w,y'''}\omega_{i}&\sin(\beta)\cos(\beta)I_{w,x'''}\omega_{w}+\cos(\beta)I_{w,z'''}(\omega_{g}+\omega_{w} \sin(\beta))\\
-\end{smallmatrix}\right|\\
-&+\begin{vmatrix}
-e_{x}&e_{y}&e_{z}\\
-R_{c,x}^{'}&R_{c,y}^{'}&R_{c,z}^{'}\\
-\frac{3}{4}\cos(\beta)l_{4}+\frac{1}{4}\sin(\beta)l_{3}&
-0&
--\frac{3}{4}\sin(\beta)l_{4}+\frac{1}{4}\cos(\beta)l_{3}\\
-\end{vmatrix}\\
-&-\begin{vmatrix}
-e_{x}&e_{y}&e_{z}\\
-R_{b,x}^{'}&R_{b,y}^{'}&R_{b,z}^{'}\\
--\frac{1}{4}\cos(\beta)l_{4}-\frac{3}{4}\sin(\beta)l_{3}&
-0&
-\frac{1}{4}\sin(\beta)l_{4}-\frac{3}{4}\cos(\beta)l_{3}\\
-\end{vmatrix}
+&=
 \end{align*}
-Met $R_{i,x}$, $R_{i,y}$ en $R_{i,z}$ als respectievelijk het x-, y- en z-coördinaat van $\vec{R}_{i}$ met $i$ gelijk aan $c$ of $d$.
-
-De volledige uitwerking zou ons te ver wijden, is vrij veel rekenwerk en het eindresultaat zou niet overzichtelijk genoteerd kunnen worden. Dit is dus achterwege gelaten.
-
-\textit{\underline{\textsc{opmerking:}}} Hierboven werd het moment berekend zoals ze op het vrijlichaamsdiagram is aangeduid. Er is echter het moment uitgeoefend door het landingsgestel op het aanhechtingspunt gevraagd. Het uiteindelijk antwoord is dus het tegengestelde van het hierboven berekend moment ($-\vec{M}_{b}^{'}$).
 \subsection{Opgave 5}
-Gegeven een actuator die enkel in de $y'$-richting een moment kan uitoefenen $\vec{M}_{act}^{'}$ weten we dat dit moment even groot en tegengesteld zal zijn aan de $y'$-component van $\vec{M}_{b}^{'}$ uit de vorige vraag.
-\begin{equation*}
-\vec{M}_{act}^{'}=\begin{bmatrix}0\\-(-M_{b,y})\\0\\\end{bmatrix}=\begin{bmatrix}0\\M_{b,y}\\0\\\end{bmatrix}
-\end{equation*}

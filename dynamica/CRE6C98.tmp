@@ -375,6 +375,9 @@ Vervolgens werken we de momentenvergelijking\footnote{Hier worden $I_{l,x'''x'''
  uit naar de enige onbekende.
 \begin{align*}
 \vec{M}_{b}^{'}&=\frac{\mathrm{d}\vec{L}_{d}^{'}}{\mathrm{d}t}+\vec{M}_{c}^{'}+\vec{R}_{c}^{'} \times \vec{r}_{CD}^{'}-\vec{R}_{b}^{'}\times\vec{r}_{BD}^{'}\\
+&=\begin{equation*}
+\begin{split}
+\frac{\mathrm{d}\vec{L}_{l}^{'}}{\mathrm{d}t}&=\left(\frac{\mathrm{d}\vec{L}_{l}^{'}}{\mathrm{d}t}\right)_{rel} + \vec{\Omega}_{c}^{'} \times \vec{L}_{l}^{'}\\
 &=\left[\begin{smallmatrix}
 \cos(\beta)I_{l,x'''x'''}(\alpha_{w}\cos(\beta)-\omega_{i}\omega_{g}+\omega_{i}\omega_{w}\sin{\beta})+\sin(\beta)I_{l,z'''z'''}(\alpha_{g}-	\alpha_{w} \sin(\beta)+\omega_{i}\omega_{w}\cos{\beta})\\
 I_{l,y'''}(\alpha_{i}-\omega_{g}\omega_{w}\cos{\beta})\\
@@ -412,7 +415,7 @@ Met $R_{i,x}$, $R_{i,y}$ en $R_{i,z}$ als respectievelijk het x-, y- en z-coörd
 
 De volledige uitwerking zou ons te ver wijden, is vrij veel rekenwerk en het eindresultaat zou niet overzichtelijk genoteerd kunnen worden. Dit is dus achterwege gelaten.
 
-\textit{\underline{\textsc{opmerking:}}} Hierboven werd het moment berekend zoals ze op het vrijlichaamsdiagram is aangeduid. Er is echter het moment uitgeoefend door het landingsgestel op het aanhechtingspunt gevraagd. Het uiteindelijk antwoord is dus het tegengestelde van het hierboven berekend moment ($-\vec{M}_{b}^{'}$).
+\textit{\underline{opmerking:}} Hierboven werd het moment berekend zoals ze op het vrijlichaamsdiagram is aangeduid. Er is echter het moment uitgeoefend door het landingsgestel op het aanhechtingspunt gevraagd. Het uiteindelijk antwoord is dus het tegengestelde van het hierboven berekend moment ($-\vec{M}_{b}^{'}$).
 \subsection{Opgave 5}
 Gegeven een actuator die enkel in de $y'$-richting een moment kan uitoefenen $\vec{M}_{act}^{'}$ weten we dat dit moment even groot en tegengesteld zal zijn aan de $y'$-component van $\vec{M}_{b}^{'}$ uit de vorige vraag.
 \begin{equation*}
